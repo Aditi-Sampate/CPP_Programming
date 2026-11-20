@@ -1,0 +1,57 @@
+//specific 
+#include<iostream>
+using namespace std;
+
+class Arithmatic
+{
+    public:
+        double No1;
+        double No2;
+
+        Arithmatic(double A, double B);
+        double Addition();
+        double Substraction();
+};
+
+Arithmatic :: Arithmatic(double A, double B)
+{
+    No1 = A;
+    No2 = B;
+}
+
+double Arithmatic :: Addition()
+{
+    double Ans; 
+
+    Ans = No1 + No2;
+    return Ans;
+}
+
+double Arithmatic :: Substraction()
+{
+    double Ans; 
+
+    Ans = No1 - No2;
+    return Ans;
+}
+
+int main()
+{
+    Arithmatic aobj1(10.05,11.02);
+    Arithmatic aobj2(20.02,21.06);
+
+    cout<<aobj1.Addition()<<"\n";
+    cout<<aobj2.Addition()<<"\n";
+
+    cout<<aobj1.Substraction()<<"\n";
+    cout<<aobj2.Substraction()<<"\n";
+
+    return EXIT_SUCCESS;
+}
+
+/*
+    Return_Value Class_Name :: Function_Name(Parameters)
+    {
+        //body
+    }
+*/
